@@ -5,7 +5,7 @@ const PORT = 8000
 
 app.use(cors())
 app.use(express.static(__dirname + './public'));
-app.use(express.static(path.join(__dirname, "js/main.js")));
+app.use(express.static(path.join(__dirname, "js")));
 
 const barbies = {
     'Barbie':{
