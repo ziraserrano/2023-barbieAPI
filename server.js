@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/:barbies', (req, res) => {
-    const barbiesNames = req.params.barbies  //set variable to barbiesNames that requests the entire barbies object from the url
+    const barbiesNames = req.params.barbies //set variable to barbiesNames that requests the entire barbies object from the url
     if(barbies[barbiesNames]){  //barbies is the object + barbiesNames is the variable
         res.json(barbies[barbiesNames]) //response with whatever the specific barbie's info is
     }else{
