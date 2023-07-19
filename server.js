@@ -4,7 +4,8 @@ const cors = require('cors') //handles local files
 const PORT = 8000
 
 app.use(cors())
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + './public'));
+app.use(express.static(path.join(__dirname, "js/main.js")));
 
 const barbies = {
     'Barbie':{
